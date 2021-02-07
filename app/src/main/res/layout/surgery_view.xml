@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:background="@drawable/item_view_background"
+    android:elevation="10sp"
+    android:layout_marginTop="10sp"
+    android:id="@+id/surgeryLinearLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Surgery:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@+id/id1"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@+id/id2"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"
+            android:text="Referring Physician:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/showSurgeryOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@id/id3"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performing Surgeon:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@id/id4"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anesthesiologist:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@+id/id5"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facility:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryFacility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@id/id6"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@+id/id7"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@id/id8"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aftercare:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryAftercare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@id/id9"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/id10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/showSurgeryNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagnosis Date"
+            android:layout_toEndOf="@+id/id10"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/font_light"
+            android:gravity="start"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

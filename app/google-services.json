@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994345514682",
+    "firebase_url": "https://epravara-b6ca1.firebaseio.com",
+    "project_id": "epravara-b6ca1",
+    "storage_bucket": "epravara-b6ca1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994345514682:android:573ab6a8e96a7963ef3483",
+        "android_client_info": {
+          "package_name": "com.example.epravara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994345514682-katea7mca4pv8mu0aflruoe4afbbi7sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzuJaHk-xxBAZzbFG54vnFQuhjFXMFkiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994345514682-katea7mca4pv8mu0aflruoe4afbbi7sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15sp"
+    android:weightSum="100"
+    android:background="@drawable/item_view_background"
+    android:elevation="10sp"
+    android:layout_marginTop="10sp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/showSurrogateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="20sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogateRelation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3sp"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogateAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3sp"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogateCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3sp"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogateState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3sp"
+            />
+
+        <TextView
+            android:id="@+id/showSurrogatePincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3sp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <ImageView
+                android:id="@+id/updateSurrogate"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:padding="8dp"
+                android:src="@drawable/ic_edit"
+                android:layout_gravity="center"
+                android:tint="@color/colorPrimary"
+                android:background="@drawable/update_delete_btn_back"
+                />
+
+            <ImageView
+                android:id="@+id/deleteSurrogate"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:padding="8dp"
+                android:src="@drawable/ic_delete"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/update_delete_btn_back"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

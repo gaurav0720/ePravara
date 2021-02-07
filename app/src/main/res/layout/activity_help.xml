@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brief Description About Application"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/font_light"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Whole application provides you different options such as:"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="15sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="15sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="15sp"
+                    android:paddingBottom="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1) Filling your Information:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="It is a all purpose medical data storage application which allows you to store your whole medical data in single mobile application, which makes you more sophisticated while managing with your medical files."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2) Can get free personal Counsellings:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="In these application you will get a chance to interact with the counsellor and chance to get free counsellings."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3) With full detailed profile:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="These application will provide you full detailed and managed profile which might help you in your difficult situations."
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/font_light"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15sp"
+                android:layout_marginTop="35sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="For more details contact us"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font_light"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click on any option below to communicate with developer"
+                        android:textColor="#808080"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/font_light"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:paddingTop="15sp"
+                            android:paddingBottom="15sp"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:padding="10dp"
+                                android:background="@drawable/card_back_four">
+
+                                <ImageView
+                                    android:id="@+id/developerCall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/dev_call"
+                                    android:layout_gravity="center"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:padding="10dp"
+                                android:background="@drawable/card_back_four">
+
+                                <ImageView
+                                    android:id="@+id/developerChat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/dev_whatsapp"
+                                    android:layout_gravity="center"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:padding="10dp"
+                                android:background="@drawable/card_back_four">
+
+                                <ImageView
+                                    android:id="@+id/developerMail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/dev_mail"
+                                    android:layout_gravity="center"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="25"
+                                android:padding="10dp"
+                                android:background="#f8f8ff">
+
+                                <ImageView
+                                    android:id="@+id/developerLocate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/dev_location"
+                                    android:layout_gravity="center"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

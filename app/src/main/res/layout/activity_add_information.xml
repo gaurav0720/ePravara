@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AddInformationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="0.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/doctor"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Select a particular option to fill your information."
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/font_light"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="Fill your information accurately."
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/card_one"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/medicalrecordsone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical\nRecords"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:padding="5dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_two"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bpweightone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BP, Weight,\nVitals"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/card_three"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13dp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/medicalhistoryone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical\nHistory"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_four"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/hospitalone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clinics,\nHospitals"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/card_five"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13dp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/emergencycontactone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Emergency\nContacts"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_six"
+                    android:layout_width="0dp"
+                    android:layout_height="145dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/surrogatesone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Health\nSurrogate"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/card_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13dp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/pharmacyone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pharmacy"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_eight"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:padding="13sp"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/card_back_one"
+                    >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/physiciansone"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Physicians"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/font_light"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

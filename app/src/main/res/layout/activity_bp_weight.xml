@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BpWeightActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Pressure Readings"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/font_light"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="Systolic"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewSystolicReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="Diastolic"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewDiastolicReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Pulse"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewPulseReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:hint="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Readings"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="7dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Weight"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewWeightReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:hint="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Vital Readings"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="7dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="Temp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewTempReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:hint="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:text="Oxygen"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewOxygenReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:hint="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:text="Respiration Rate"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/font_light"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                    <EditText
+                        android:id="@+id/viewRRReadings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="25"
+                        android:hint="000"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Blood Pressure List"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/bpList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Get List"
+                        android:background="@drawable/btn_login_reg_back"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Weight List"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/weightList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Get List"
+                        android:background="@drawable/btn_login_reg_back"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    tools:ignore="SmallSp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:text="Vitals List"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/vitalsList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Get List"
+                        android:background="@drawable/btn_login_reg_back"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/font_light"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIllnessActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details for new Illness/Conditions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:fontFamily="@font/font_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To select a date click on date format (00-00-0000)."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/font_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="15sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Select Date:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/illnessDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="00-00-0000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Condition or Illness type:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font_light"/>
+
+            <Spinner
+                android:id="@+id/illnessTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtIllnessType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/font_light"
+                android:inputType="textCapWords"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Condition Name:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font_light"/>
+
+            <Spinner
+                android:id="@+id/illnessNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="visible"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtIllnessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/font_light"
+                android:inputType="textCapWords"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                tools:ignore="SmallSp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/never"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="Never"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:checked="true"/>
+
+                 <RadioButton
+                     android:id="@+id/past"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="Past"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"/>
+
+                <RadioButton
+                    android:id="@+id/present"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="Present"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/addIllness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Condition/Illness"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/font_light"
+                android:textSize="18sp"
+                android:background="@drawable/btn_login_reg_back"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="50sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

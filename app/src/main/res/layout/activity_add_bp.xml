@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBpActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To select a date click on date format (00-00-0000)."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/font_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="15sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Select Date:"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/bpWeightDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="00-00-0000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Pressure Readings"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="Systolic"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/systolicReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="Diastolic"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/diastolicReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="Pulse"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/pulseReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:text="Arm"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <RadioGroup
+                    android:id="@+id/armReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="35"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="100">
+
+                    <RadioButton
+                        android:id="@+id/leftArm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="L"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font_light"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rightArm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="R"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font_light"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight Readings"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Weight"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/weightReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="45"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+                <RadioGroup
+                    android:id="@+id/weightUnits"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/kgs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Kgs"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/font_light"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="15dp"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Vital Readings"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="Temp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/tempReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:text="Oxygen"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/oxygenReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:text="Respiration Rate"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/font_light"
+                    android:gravity="center"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/rrReadings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:hint="000"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/addReadings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Readings"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/font_light"
+                android:textSize="18sp"
+                android:background="@drawable/btn_login_reg_back"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

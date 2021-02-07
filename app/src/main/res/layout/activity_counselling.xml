@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CounsellingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Free Counsellings"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/font_bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15sp"
+                android:layout_marginTop="12sp"
+                android:background="@drawable/card_back_three">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90">
+
+                        <TextView
+                            android:id="@+id/idViaCall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Via Call"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font_bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get free counsellings via doing a call."
+                            android:textSize="18sp"
+                            android:textColor="#808080"
+                            android:fontFamily="@font/font_light"
+                            android:layout_below="@id/idViaCall"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_weight="10"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/call_counseling"
+                        android:padding="5sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/callCounselling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make a Call"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/counselling_back"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25sp"
+                android:padding="15sp"
+                android:background="@drawable/card_back_three">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90">
+
+                        <TextView
+                            android:id="@+id/idViaChat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Via Chat"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font_bold"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get free counsellings via doing a whatsapp chat. "
+                            android:textSize="18sp"
+                            android:textColor="#808080"
+                            android:fontFamily="@font/font_light"
+                            android:layout_below="@id/idViaChat"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_weight="10"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/chat_counseling"
+                        android:padding="5sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/chatCounselling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start a Chat"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/counselling_back"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25sp"
+                android:padding="15sp"
+                android:background="@drawable/card_back_three">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90">
+
+                        <TextView
+                            android:id="@+id/idViaMeet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Via Meet"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font_bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/idViaCallText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Get free counsellings via meeting an counsellor."
+                            android:textSize="18sp"
+                            android:textColor="#808080"
+                            android:fontFamily="@font/font_light"
+                            android:layout_below="@id/idViaMeet"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_weight="10"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/meet_counseling"
+                        android:padding="5sp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/meetCounselling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get the Location"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/counselling_back"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

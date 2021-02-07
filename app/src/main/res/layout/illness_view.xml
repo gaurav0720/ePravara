@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15sp"
+    android:background="@drawable/item_view_background"
+    android:elevation="10sp"
+    android:layout_marginTop="10sp"
+    android:id="@+id/illnessLinearLayout">
+
+    <TextView
+        android:id="@+id/showIllnessDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="20sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/showIllnessType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="18sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="3sp"
+        />
+
+    <TextView
+        android:id="@+id/showIllnessName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="18sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="3sp"
+        />
+
+    <TextView
+        android:id="@+id/showIllnessOtherType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="18sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="3sp"
+        />
+
+    <TextView
+        android:id="@+id/showIllnessOtherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="18sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="3sp"
+        />
+
+    <TextView
+        android:id="@+id/showIllnessHappened"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABC"
+        android:textSize="18sp"
+        android:fontFamily="@font/font_light"
+        android:textColor="@color/black"
+        android:layout_marginTop="3sp"
+        />
+
+
+
+</LinearLayout>

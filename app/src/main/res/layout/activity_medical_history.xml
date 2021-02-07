@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalHistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="14dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fill all information accurately!"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/font_light"
+                    android:layout_marginTop="4dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/card_illness">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15sp"
+                        android:background="@drawable/card_back_two">
+
+                        <ImageView
+                            android:id="@+id/illnessImage"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/illness"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/illnessImage"
+                            android:text="Conditions/Illness"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="15sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/card_hospitalstays">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15sp"
+                        android:background="@drawable/card_back_two">
+
+                        <ImageView
+                            android:id="@+id/hospitalstaysImage"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/hospitalstays"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/hospitalstaysImage"
+                            android:text="Hospital Stay's"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/card_MHprocedures">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15sp"
+                        android:background="@drawable/card_back_two">
+
+                        <ImageView
+                            android:id="@+id/MHproceduresImage"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/mhprocedures"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/MHproceduresImage"
+                            android:text="Procedures List"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3394154946391621/9430613445">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

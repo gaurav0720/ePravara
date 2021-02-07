@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSurgeryActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/font_light"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To select a date click on date format (00-00-0000)."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/font_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="15sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Surgery Date"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/getSurgeryDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="00-00-0000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                tools:ignore="SmallSp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getSurgeryName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Surgery Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getSurgeryReason"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reason for Surgery"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getSurgeryResults"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Results of Surgery"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getSurgeryAftercare"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aftercare required for Surgery"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getSurgeryNotes"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Notes"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/font_light"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordering Physician"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font_light"
+                android:textColor="#808080"/>
+
+            <Spinner
+                android:id="@+id/surgeryOrderingPhysicianSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Performing Surgeon"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font_light"
+                android:textColor="#808080"/>
+
+            <Spinner
+                android:id="@+id/surgeryPerformingSurgeonSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anesthesiologist"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font_light"
+                android:textColor="#808080"/>
+
+            <Spinner
+                android:id="@+id/surgeryAnesthesiologistSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Procedure Facility"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/font_light"
+                android:textColor="#808080"/>
+
+            <Spinner
+                android:id="@+id/surgeryProcedureFacilitySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <Button
+                android:id="@+id/addSurgeryDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Surgery Details"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/font_light"
+                android:textSize="18sp"
+                android:background="@drawable/btn_login_reg_back"
+                android:layout_marginBottom="30sp"
+                android:layout_marginTop="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

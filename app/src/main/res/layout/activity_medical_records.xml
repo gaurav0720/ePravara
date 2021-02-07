@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalRecordsActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fill all information accurately!"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/font_light"
+                android:layout_marginTop="4dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card_diagnosis">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/card_back_two">
+
+                    <ImageView
+                        android:id="@+id/diagnosisImage"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/diagnosisone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/diagnosisImage"
+                        android:text="Diagnosis List"
+                        android:fontFamily="@font/font_light"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="15sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card_surgery">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/card_back_two">
+
+                    <ImageView
+                        android:id="@+id/surgeryImage"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/surgeryone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/surgeryImage"
+                        android:text="Surgeries List"
+                        android:fontFamily="@font/font_light"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card_procedures">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/card_back_two">
+
+                    <ImageView
+                        android:id="@+id/proceduresImage"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/procedureone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/proceduresImage"
+                        android:text="Procedures List"
+                        android:fontFamily="@font/font_light"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                app:cardCornerRadius="15dp"
+                android:id="@+id/card_labresults">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/card_back_two">
+
+                    <ImageView
+                        android:id="@+id/labImage"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/labresultsone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/labImage"
+                        android:text="Lab Results"
+                        android:fontFamily="@font/font_light"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15sp"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
